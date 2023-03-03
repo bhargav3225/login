@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<meta name="color-scheme" content="light">
+<title>Search here</title>
+</head>
+<body>
+<select id="theme" onchange="switchTheme()">
+   <option value="light">Light</option>
+    <option value="dark">Dark</option>
+ </select>
+ <script>
+   function switchTheme(){
+	   const theme =document.getElementById("theme").value;
+	                   document.gatElementsByTagName("meta")
+	                   [0].content = theme;
+   }
+ 
+ </script>
+<form action="Search" method="post">
+Enter your phonenumber:<input type="text" name="phonenumber"/>
+<br/>
+<input type="Submit" value="incoming call">
+</form>
+</body>
+</html>
